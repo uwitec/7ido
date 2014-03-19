@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Nivo Slider | Bolder Premium Wordpress Theme</title>
+                        
+    <!-- BEGIN .styles -->
+    <css href="__CSS__/ido.css" />
+    <css href="__CSS__/them/green.css" /> 
+    
+    <!-- [favicon] begin -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />  
+    <!-- [favicon] end -->
+</head>                   
+        
+<body class="no_js">
+    <div id="top-space"></div>
+    <include file="Common:header" />
+    <!-- START CONTENT -->
+    <div id="content">
+        <div class="inner">                 
+			<div class="text">
+                <div class="clear"></div>
+                <br/><br/>
+                <h1>{$cateName}</h1>
+                <h4>Effects</h4>
+                <ul class="short arrow">
+                	<volist name="list" id="item">
+                    	<li><a href="{:U('news/detail',array('id'=>$item[id]))}">{$item.title}</a></li>
+                    </volist>
+                </ul>
+                <div class="blog-pagination" style="display:none;">
+					<span class="pages">Page 1 of 2</span>1
+					<a class="page" href="#">2</a>
+					<a class="nextpostslink" href="#">»</a>
+				</div>
+                <div class="blog-pagination">
+					{$page}
+				</div>
+            </div>      
+            <!-- START SIDEBAR -->
+            <div class="sidebar">     
+    			
+				<!-- SHORTCODE MENU -->
+				<div class="widget">
+					<h2>相关阅读</h2>
+					
+					<ul class="menu">
+						<li><a href="shortcode_tipography.html">Tipography</a></li>
+						<li><a href="shortcode_alertbox.html">Alert Box</a></li>
+						<li><a href="shortcode_buttons.html">Buttons</a></li>
+						<li><a href="shortcode_sections.html">33 Icon Section</a></li>
+						<li><a href="shortcode_nivo.html">Nivo Slider</a></li>
+						<li><a href="shortcode_tabs.html">Tabs and Toggles</a></li>
+						<li><a href="shortcode_tables.html">Table</a></li>
+						
+						<li><a href="shortcode_lists.html">Styled List and Icon</a></li>
+						<li><a href="shortcode_columns.html">Columns</a></li>
+						
+					</ul>
+				</div> 
+				<!-- END SHORTCODE MENU -->
+				          
+    		</div>            
+            <!-- END SIDEBAR -->
+                        
+        </div>              
+    
+    	<div class="clear"></div>
+    
+    </div>
+    <!-- END CONTENT -->  
+    
+	<!-- START FLASH NEWS -->
+	<div class="news-home">
+        
+        <div class="inner">
+            <h2>News</h2>
+            <ul>
+                <li><a href="#">Bolder, a new WordPress Theme – buy it on Theme Forest</a> | January 16, 2011</li>
+                <li><a href="#">All right! Now the news are dynamics!</a> | January 16, 2011</li>
+                <li><a href="#">Make your choice from 18 different skins</a> | January 16, 2011</li>
+            </ul>
+        </div>        
+        <div class="clear"></div>
+    </div>
+	<!-- END FLASH NEWS -->
+	<include file="Common:footer" /> 
+    <!-- START COPYRIGHT -->
+    <p id="copyright">Copyright 2010 - Bolder Theme, theme by <a href="http://www.yourinspirationweb.com/en">Your Inspiration Web</a> | purchase it on <a href="http://themeforest.net/?ref=Sara_p">Theme Forest</a></p>
+    <!-- END COPYRIGHT -->                                    
+    
+    <script type="text/javascript">
+  
+	</script>
+
+</body>
+</html>
